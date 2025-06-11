@@ -32,3 +32,25 @@ A fast and efficient URL shortener service built with FastAPI, PostgreSQL, and D
 ```bash
 git clone https://github.com/summii/url-shortener.git
 cd url-shortener
+```
+
+### Installation
+```bash
+python -m venv venv
+source venv/bin/activate  
+```
+
+### Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### Start Postgres with Docker
+```bash
+docker-compose up -d postgres
+```
+
+### Run the application
+```bash
+uvicorn app.main:app --reload
+```
